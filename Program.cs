@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace ADV02
 {
@@ -52,6 +53,18 @@ namespace ADV02
                 }
             }
             return Sum;
+        }
+
+        public static void PrintlinkedList(LinkedList<int> linkedlist)
+        {
+            Console.WriteLine();
+            foreach(int item in linkedlist)
+            {
+                Console.WriteLine($"<- {item} ->");
+            }
+            Console.WriteLine("null");
+            Console.WriteLine();
+
         }
         static void Main(string[] args)
         {
@@ -295,6 +308,35 @@ namespace ADV02
             //Console.WriteLine($"Count : {list.Count},Capacity : {list.Capacity}"); 
             #endregion
 
+            #region Genericlists : Linkedlist
+            //Genericlists : Linkedlist
+
+            //Linkedlist<>
+
+            //Linkedlist
+
+            //LinkedList<int> linkedlist = new LinkedList<int>();
+
+            //linkedlist.AddFirst(1);
+            //linkedlist.AddFirst(2);
+            //linkedlist.AddLast(1);
+            //linkedlist.AddLast(2);
+            //linkedlist.AddLast(3);
+
+            //LinkedListNode<int> node = new LinkedListNode<int>(3);
+            //linkedlist.AddLast(1);
+
+            //Console.WriteLine(linkedlist.First.Value);
+            //Console.WriteLine(linkedlist.Last.Value);
+
+            //linkedlist.Clear();
+
+            //Console.WriteLine(linkedlist.First.Next);
+            //linkedlist.Remove(linkedlist.First);
+            //linkedlist.Remove(2);
+
+            //PrintArrayList(linkedList); 
+            #endregion
 
 
 
