@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace ADV02
 {
@@ -65,6 +66,16 @@ namespace ADV02
             Console.WriteLine("null");
             Console.WriteLine();
 
+        }
+
+        public static void PrintStack(Stack<int> stack)
+        {
+            Console.WriteLine();
+            foreach(int item in stack)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
         }
         static void Main(string[] args)
         {
@@ -338,7 +349,32 @@ namespace ADV02
             //PrintArrayList(linkedList); 
             #endregion
 
+            #region Generic list : STACK 
+            //Generic list : STACK 
 
+            //Stack<int> stack = new Stack<int>();
+
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+            //stack.Push(4);
+            //stack.Push(5);
+            //int top = stack.Pop();
+            //Console.WriteLine(top);
+
+            ////int top = stack.Peek();
+            ////Console.WriteLine(top);
+
+            //stack.TryPeek();
+            //bool flag = stack.TryPeek(out int top);
+            //Stack.Pop();
+            //bool flag = stack.TryPop(out int top);
+
+            //PrintStack(stack);
+            //Console.WriteLine(top);
+
+            //undo : ctrl + z 
+            #endregion
 
         }
     }
