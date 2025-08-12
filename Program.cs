@@ -2,6 +2,21 @@
 {
     internal class Program
     {
+
+        static void ReverseQueueUsingStack(Queue<int> queue)
+        {
+            Stack<int> stack = new Stack<int>();
+
+            while(queue.Count > 0)
+            {
+                stack.Push(queue.Dequeue());
+            }
+
+            while(stack.Count > 0)
+            {
+                queue.Enqueue(stack.Pop());
+            }
+        }
         static void Main(string[] args)
         {
 
@@ -66,6 +81,13 @@
             //    Console.WriteLine("No");
 
 
+
+            // Q3 : 
+
+
+            //Queue<int> queue = new Queue<int>(new[] { 1, 2, 3, 4, 5 });
+            //ReverseQueueUsingStack(queue);
+            //Console.WriteLine($"{queue}");
         }
     }
 }
