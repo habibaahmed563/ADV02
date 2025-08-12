@@ -200,9 +200,24 @@ namespace ADV02
 
             // Q9 :
 
+            //int N1 = 5;
+            //int N2 = 3;
 
+            //int[] arr1 = { 1, 2, 3, 4, 4 };
+            //int[] arr2 = { 10, 4, 4 };
+            //List<int> tempArr2 = new List<int>(arr2);
+            //List<int> intersection = new List<int>();
 
+            //foreach (int num in arr1)
+            //{
+            //    if(tempArr2.Contains(num))
+            //    {
+            //        intersection.Add(num);
+            //        tempArr2.Remove(num);
+            //    }
+            //}
 
+            //Console.WriteLine(string.Join(" ", intersection));
         }
     }
 }
