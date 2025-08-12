@@ -17,6 +17,27 @@
                 queue.Enqueue(stack.Pop());
             }
         }
+
+        static bool IsBalanced(string input)
+        {
+            Stack<char> stack = new Stack<char>();
+            foreach(char c in input)
+            {
+                if(c == '(' || c == '[' || c == '{')
+                {
+                    stack.Push(c);
+                }else if(c==')' || c== ']' || c== '}')
+                {
+                    if (stack.Count == 0) return false;
+                    char top = stack.Pop();
+                    if ((c == ')' && top != '(') || (c == ']' && top != '[') || (c == '}' && top != '{'))
+                        return false;
+
+                }
+            }
+            return stack.Count == 0;
+        }
+
         static void Main(string[] args)
         {
 
@@ -88,6 +109,16 @@
             //Queue<int> queue = new Queue<int>(new[] { 1, 2, 3, 4, 5 });
             //ReverseQueueUsingStack(queue);
             //Console.WriteLine($"{queue}");
+
+
+            // Q4 : 
+
+
+            //string input = "[{()}]";
+            //Console.WriteLine(IsBalanced(input) ? "Balanced" : "Not Balanced");
+
+
+
         }
     }
 }
