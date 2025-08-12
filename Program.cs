@@ -56,6 +56,26 @@ namespace ADV02
             }
         }
 
+        static void ReverseFirstK(Queue<int> n, int K)
+        {
+            Stack<int> s = new Stack<int>();
+
+            for(int i=0;i<K;i++)
+            {
+                s.Push(n.Dequeue());
+            }
+
+            while(s.Count>0)
+            {
+                n.Enqueue(s.Pop());
+            }
+
+            for(int i= 0; i<n.Count-K;i++)
+            {
+                n.Enqueue(n.Dequeue());
+            }
+        }
+
         static void Main(string[] args)
         {
 
@@ -242,7 +262,13 @@ namespace ADV02
             //}
 
 
+            // Q11 :
 
+            //Queue<int> queue = new Queue<int>(new int[] { 1, 2, 3, 4, 5 });
+            //int K = 3;
+
+            //ReverseFirstK(queue, K);
+            //Console.WriteLine(string.Join(" ", queue));
 
         }
     }
