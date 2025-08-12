@@ -218,6 +218,32 @@ namespace ADV02
             //}
 
             //Console.WriteLine(string.Join(" ", intersection));
+
+
+
+            // Q10 :
+
+            //List<int> nums = new List<int> { 1, 2, 3, 7, 5 };
+            //int target = 12;
+
+            //for (int start = 0; start < nums.Count; start++)
+            //{
+            //    int sum = 0;
+            //    for(int end=start; end<nums.Count; end++)
+            //    {
+            //        sum += nums[end];
+            //        if(sum==target)
+            //        {
+            //            List<int> subList = nums.GetRange(start, end - start + 1);
+            //            Console.WriteLine(string.Join(" ", subList));
+            //            return;
+            //        }
+            //    }
+            //}
+
+
+
+
         }
     }
 }
