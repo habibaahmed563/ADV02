@@ -166,6 +166,43 @@ namespace ADV02
             //}
 
 
+            // Q8 :
+
+            //Stack<int> stack = new Stack<int>();
+
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+            //stack.Push(4);
+            //stack.Push(5);
+
+            //int target = 30;
+            //int count = 0;
+            //bool found = false;
+
+            //foreach(int item in stack)
+            //{
+            //    count++;
+            //    if(item==target)
+            //    {
+            //        Console.WriteLine($"Target was found successfully and the count = {count}");
+            //        found = true;
+            //        break;
+            //    }
+            //}
+
+            //if(!found )
+            //{
+            //    Console.WriteLine("target was not found");
+            //}
+
+
+
+            // Q9 :
+
+
+
+
         }
     }
 }
