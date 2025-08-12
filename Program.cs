@@ -38,6 +38,12 @@
             return stack.Count == 0;
         }
 
+        static int[] Removeduplicates(int[] arr)
+        {
+            return arr.Distinct().ToArray();
+        }
+
+
         static void Main(string[] args)
         {
 
@@ -116,6 +122,14 @@
 
             //string input = "[{()}]";
             //Console.WriteLine(IsBalanced(input) ? "Balanced" : "Not Balanced");
+
+
+            //// Q5 :
+
+            //int[] numbers = { 1, 2, 2, 3, 3, 4, 5 };
+            //int[] result = Removeduplicates(numbers);
+
+            //Console.WriteLine(string.Join(" ", result));
 
 
 
