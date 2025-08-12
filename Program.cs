@@ -150,6 +150,22 @@ namespace ADV02
             //RemoveOddNumbers(numbers);
             //Console.WriteLine(string.Join(" ", numbers.ToArray()));
 
+
+            // Q7 : 
+
+            //Queue queue = new Queue();
+
+            //queue.Enqueue(1);
+            //queue.Enqueue("Apple");
+            //queue.Enqueue(5.28);
+
+            //Console.WriteLine("Queue elements : ");
+            //foreach(var item in queue)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
         }
     }
 }
