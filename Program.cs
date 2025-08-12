@@ -1,4 +1,6 @@
-﻿namespace ADV02
+﻿using System.Collections;
+
+namespace ADV02
 {
     internal class Program
     {
@@ -43,6 +45,16 @@
             return arr.Distinct().ToArray();
         }
 
+        static void RemoveOddNumbers(ArrayList list)
+        {
+            for(int i=list.Count-1; i>=0;i--)
+            {
+                if ((int)list[i] %2 !=0)
+                {
+                    list.RemoveAt(i);
+                }
+            }
+        }
 
         static void Main(string[] args)
         {
@@ -132,6 +144,11 @@
             //Console.WriteLine(string.Join(" ", result));
 
 
+            // Q6 :
+
+            //ArrayList numbers = new ArrayList { 1, 2, 3, 4, 5, 6 };
+            //RemoveOddNumbers(numbers);
+            //Console.WriteLine(string.Join(" ", numbers.ToArray()));
 
         }
     }
